@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.gradient-effect {
+    opacity: 0.55;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+.gradient-effect:hover {
+    opacity: 1;
+    transition-delay: 0.5s; /* Delay the opacity transition on hover */
+  }
+  
