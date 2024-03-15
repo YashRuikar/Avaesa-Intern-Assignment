@@ -21,6 +21,8 @@ import mobile from "../assets/mobile.svg";
 import download from "../assets/download.svg";
 import trophy from "../assets/trophy.svg";
 import { useState } from "react";
+import profile1 from "../assets/profile1.png";
+import profile2 from "../assets/profile2.png";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(null);
@@ -233,12 +235,12 @@ const Home = () => {
         <div className="text-3xl font-bold mb-6">Course Content</div>
         <div className="border border-black ">
           <div
-            className="border-b px border-black text-xl font-bold cursor-pointer bg-gray-100"
+            className="border-b px border-black text-xl font-bold cursor-pointer bg-gray-50"
             onClick={() => toggleSection(1)}
             style={{
               transition: "all 0.3s ease",
               padding: "20px",
-              paddingLeft: "20px"
+              paddingLeft: "20px",
             }}
           >
             1. Introduction
@@ -278,12 +280,12 @@ const Home = () => {
           )}
 
           <div
-            className="border-b border-black text-xl font-bold cursor-pointer bg-gray-100"
+            className="border-b border-black text-xl font-bold cursor-pointer bg-gray-50"
             onClick={() => toggleSection(2)}
             style={{
               transition: "all 0.3s ease",
               padding: "20px",
-              paddingLeft: "20px"
+              paddingLeft: "20px",
             }}
           >
             2. Asking the Right Questions
@@ -305,7 +307,7 @@ const Home = () => {
                     className="w-6 h-6 mr-3"
                   />
                   <p className="font-semibold">
-                  Developing critical thinking skills
+                    Developing critical thinking skills
                   </p>
                 </div>
               </div>
@@ -316,9 +318,7 @@ const Home = () => {
                     alt="LaptopPlay"
                     className="w-6 h-6 mr-3"
                   />
-                  <p className="font-semibold">
-                  Formulating probing questions
-                  </p>
+                  <p className="font-semibold">Formulating probing questions</p>
                 </div>
               </div>
               <div>
@@ -329,7 +329,7 @@ const Home = () => {
                     className="w-6 h-6 mr-3"
                   />
                   <p className="font-semibold">
-                  Interview techniques for extracting valuable information
+                    Interview techniques for extracting valuable information
                   </p>
                 </div>
               </div>
@@ -337,12 +337,12 @@ const Home = () => {
           )}
 
           <div
-            className="border-b border-black text-xl font-bold cursor-pointer bg-gray-100"
+            className="border-b border-black text-xl font-bold cursor-pointer bg-gray-50"
             onClick={() => toggleSection(3)}
             style={{
               transition: "all 0.3s ease",
               padding: "20px",
-              paddingLeft: "20px"
+              paddingLeft: "20px",
             }}
           >
             3. Crafting Captivating Stories
@@ -364,7 +364,7 @@ const Home = () => {
                     className="w-6 h-6 mr-3"
                   />
                   <p className="font-semibold">
-                  The art of storytelling in journalism
+                    The art of storytelling in journalism
                   </p>
                 </div>
               </div>
@@ -376,7 +376,7 @@ const Home = () => {
                     className="w-6 h-6 mr-3"
                   />
                   <p className="font-semibold">
-                  Techniques for engaging your audience
+                    Techniques for engaging your audience
                   </p>
                 </div>
               </div>
@@ -388,7 +388,7 @@ const Home = () => {
                     className="w-6 h-6 mr-3"
                   />
                   <p className="font-semibold">
-                  Writing styles for different media platforms
+                    Writing styles for different media platforms
                   </p>
                 </div>
               </div>
@@ -396,12 +396,12 @@ const Home = () => {
           )}
 
           <div
-            className="border-b border-black text-xl font-bold cursor-pointer bg-gray-100"
+            className="border-b border-black text-xl font-bold cursor-pointer bg-gray-50"
             onClick={() => toggleSection(4)}
             style={{
               transition: "all 0.3s ease",
               padding: "20px",
-              paddingLeft: "20px"
+              paddingLeft: "20px",
             }}
           >
             4. Ethics and Integrity in Journalism
@@ -423,7 +423,7 @@ const Home = () => {
                     className="w-6 h-6 mr-3"
                   />
                   <p className="font-semibold">
-                  Arun principles of ethical journalism
+                    Arun principles of ethical journalism
                   </p>
                 </div>
               </div>
@@ -435,7 +435,7 @@ const Home = () => {
                     className="w-6 h-6 mr-3"
                   />
                   <p className="font-semibold">
-                  Fact-checking and verifying sources
+                    Fact-checking and verifying sources
                   </p>
                 </div>
               </div>
@@ -447,7 +447,7 @@ const Home = () => {
                     className="w-6 h-6 mr-3"
                   />
                   <p className="font-semibold">
-                  Handling biases and maintaining objectivity
+                    Handling biases and maintaining objectivity
                   </p>
                 </div>
               </div>
@@ -455,12 +455,12 @@ const Home = () => {
           )}
 
           <div
-            className="text-xl font-bold cursor-pointer bg-gray-100"
+            className="text-xl font-bold cursor-pointer bg-gray-50"
             onClick={() => toggleSection(5)}
             style={{
               transition: "all 0.5s ease-in",
               padding: "20px",
-              paddingLeft: "20px"
+              paddingLeft: "20px",
             }}
           >
             5. The Future of Journalism
@@ -513,6 +513,53 @@ const Home = () => {
             </div>
           )}
         </div>
+      </div>
+
+      {/* Review */}
+      <div>
+      <h2 className="px-48 underline mt-10 text-3xl font-bold">Testimonial</h2>
+      <div className="flex pt-10 mx-48 gap-x-10">
+        <div className="border border-black p-10 rounded-3xl bg-gray-50 flex items-center">
+          <div className="w-1/4">
+            <img
+              src={profile1}
+              alt="profileImage"
+              className="w-32 h-32 rounded-[50%]"
+            />
+          </div>
+          <div className="w-2/3 pl-10">
+            <h2 className="text-2xl font-bold">Yash Ruikar</h2>
+            <p className="text-gray-400">Student</p>
+            <p className="pt-5">
+              I recently completed the Arun on Journalism course, and I must say
+              it was an eye-opening and enriching experience. As an aspiring
+              journalist, learning from one of the industry most iconic figures
+              was a dream come true.
+            </p>
+          </div>
+        </div>
+
+        <div className="border border-black p-10 rounded-3xl bg-gray-50 flex items-center">
+          <div className="w-1/4">
+            <img
+              src={profile2}
+              alt="profileImage"
+              className="w-32 h-32 rounded-[50%]"
+            />
+          </div>
+          <div className="w-2/3 pl-10">
+            <h2 className="text-2xl font-bold">Juila Kane</h2>
+            <p className="text-gray-400">Intern</p>
+            <p className="pt-5">
+              The course online community was a treasure trove of knowledge and
+              support. I enjoyed interacting with fellow journalists from around
+              the world, sharing insights and feedback on each other work. The
+              discussions and forums added an enriching layer to the learning
+              experience.
+            </p>
+          </div>
+        </div>
+      </div>
       </div>
     </>
   );
