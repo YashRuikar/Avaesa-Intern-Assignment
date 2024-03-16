@@ -9,6 +9,6 @@
 
 .gradient-effect:hover {
     opacity: 1;
-    transition-delay: 0.5s; /* Delay the opacity transition on hover */
-  }
+    transition-delay: 0.5s; 
+}
   
